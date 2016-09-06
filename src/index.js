@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const App = function() {
+import Search from './components/search_component';
+
+const MyApp = () => {
     return (
-    <div>Loading......
-    </div>
+        <div>
+        <Search />
+        </div>
     );
 }
 
-ReactDOM.render(<App/>, document.querySelector('.container'));
+ReactDOM.render(<MyApp />, document.querySelector('.root'));
